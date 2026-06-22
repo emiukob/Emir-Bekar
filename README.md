@@ -109,3 +109,13 @@ Watch the complete autonomous run where the swarm navigates with applied fuzzy, 
   <em>Click the badge above to watch the full system demonstration on YouTube.</em>
 </p>
 
+---
+
+## 📖 Academic Citation
+
+This project has been published and presented at the *8th International Congress on Human-Computer Interaction, Optimization and Robotic Applications (ICHORA 2026)* in Ankara, Türkiye.
+
+> Emir Bekar, Berkay Vatansever, Serra Irmak Uysal, Omer Yigit, Suleyman Efe Ceylan, Yesim Oniz. **"Adaptive Formation Control for Collaborative Swarm Robots,"** IEEE Xplore, 2026.
+> 
+> [🔗 Read the full paper on IEEE Xplore](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11537161&isnumber=11536968)
+
