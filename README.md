@@ -1,6 +1,7 @@
 # Adaptive Formation Control For Collaborative Swarm Robots 🤖🛰️
-<img width="450" height="200" alt="line 1" src="https://github.com/user-attachments/assets/b18a6806-85b2-4496-8701-9b37eef12816" />
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/b18a6806-85b2-4496-8701-9b37eef12816" alt="Swarm Robots" width="800">
+</p>
 This repository contains the software architecture, control algorithms, and hardware integration codes for the **Adaptive Formation Control of Swarm Robots** project. The system utilizes centralized vision processing (AprilTags) combined with decentralized swarm behaviors powered by Fuzzy Logic and ESP-NOW communication.
 
 > **📖 Academic Citation (IEEE)**
@@ -18,6 +19,7 @@ The central brain (`leader_nav.py`) runs on a PC and processes real-time camera 
 * **Tracking:** Implements a Constant Velocity **Kalman Filter** to predict robot movements during occlusions and filter camera noise.
 * **Navigation:** Employs **Adaptive Pure Pursuit** with cross-track and curvature lookahead adjustments.
 * **Swarm Intelligence:** Uses **Fuzzy Logic (skfuzzy)** to calculate Adaptive Cruise Control (ACC) speeds and maintain formation cohesion without hard braking.
+  
 * **Obstacle Avoidance:** Implements Artificial Potential Fields (APF) to repel robots from walls and each other dynamically.
 
 ### 2. ESP32 Gateway & Swarm Nodes (`/Arduino`)
