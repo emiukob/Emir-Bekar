@@ -111,9 +111,4 @@ Watch the complete autonomous run where the swarm navigates with applied fuzzy, 
 
 ---
 
-## 🚀 Quick Start & Installation
 
-### Requirements
-Ensure you have Python 3.8+ installed. Install the core dependencies:
-```bash
-pip install opencv-python numpy scikit-fuzzy pupil-apriltags pyserial
