@@ -109,6 +109,3 @@ Watch the complete autonomous run where the swarm navigates with applied fuzzy, 
   <em>Click the badge above to watch the full system demonstration on YouTube.</em>
 </p>
 
----
-
-
