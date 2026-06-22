@@ -39,7 +39,7 @@ The architecture eliminates the need for expensive onboard sensors by shifting h
 
 <p align="center">
   <!-- GÖREV 2: BURAYA SLAYT 13'TEKİ "FUZZY CONTROL ARCHITECTURE" AKIŞ ŞEMASINI EKLE -->
-  <img src="BURAYA_AKIS_SEMASI_GELECEK" alt="Control Architecture" width="700">
+  <img src="images/Spped&Steering.png" alt="Control Architecture" width="700">
 </p>
 
 ---
