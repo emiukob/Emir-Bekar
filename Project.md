@@ -9,7 +9,7 @@
 
 <p align="center">
   <!-- GÖREV 1: BURAYA SLAYT 3'TEKİ 4'LÜ ROBOT FOTOĞRAFINI (Leader, R1, R2, R3 YAZAN) EKLE -->
-  <img src="BURAYA_ROBOTLARIN_FOTOSU_GELECEK" alt="Swarm Robots" width="600">
+  <img src="" alt="Swarm Robots" width="600">
 </p>
 
 </div>
@@ -36,11 +36,6 @@ The architecture eliminates the need for expensive onboard sensors by shifting h
 1. **Perception Layer:** An overhead Samsung S24 smartphone streams the arena at 720p/30fps[cite: 10]. `pupil_apriltags` extracts the Pose (x, y, θ) of each robot in real-time[cite: 4, 10].
 2. **Main Controller (Python):** Processes the vision data, filters camera noise using a Constant Velocity **Kalman Filter** (handling occlusions predictively), and computes navigation vectors[cite: 4].
 3. **Wireless Communication:** A dedicated Type-C Gateway ESP32 translates Python serial strings into raw hex and broadcasts PWM commands to the swarm via the **ESP-NOW** protocol for zero-latency (<2ms) execution[cite: 4, 9].
-
-<p align="center">
-  <!-- GÖREV 2: BURAYA SLAYT 13'TEKİ "FUZZY CONTROL ARCHITECTURE" AKIŞ ŞEMASINI EKLE -->
-  <img src="images/Spped&Steering.png" alt="Control Architecture" width="700">
-</p>
 
 ---
 
