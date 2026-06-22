@@ -1,9 +1,9 @@
 <div align="center">
   
 # Adaptive Formation Control For Collaborative Swarm Robots 🤖🛰️
-**Istanbul Bilgi University | Mechatronics Engineering Department**
 
-*Developed by: Emir Bekar, Berkay Vatansever | Advisor: Yeşim Öniz*
+
+*Developed by: Emir Bekar
 
 <br>
 
