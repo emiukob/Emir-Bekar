@@ -1,9 +1,31 @@
-# Adaptive Formation Control For Collaborative Swarm Robots
+# Adaptive Formation Control For Collaborative Swarm Robots 🤖🛰️
 
-This project was developed to establish adaptive formation control for collaborative swarm robots. The system consists of 4 robots, a gateway managing the communication traffic, and a main control software that coordinates the entire swarm autonomously or manually.
+This repository contains the software architecture, control algorithms, and hardware integration codes for the **Adaptive Formation Control of Swarm Robots** project. The system utilizes centralized vision processing (AprilTags) combined with decentralized swarm behaviors powered by Fuzzy Logic and ESP-NOW communication.
 
-## 📂 Project Components and File Structure
+> **📖 Academic Citation (IEEE)**
+> This project has been published and presented at the 8th International Congress on Human-Computer Interaction, Optimization and Robotic Applications (ICHORA 2026). 
+> *Emir Bekar et al., "Adaptive Formation Control for Collaborative Swarm Robots," IEEE.*
+> [Read the full paper on IEEE Xplore](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11537161&isnumber=11536968)
 
-*   **Robot Codes (Arduino):** Arduino codes providing motor, sensor, and low-level movement controls for the 4 individual robots in the swarm.
-*   **Gateway Code (Arduino):** The communication bridge (gateway) code that manages the data flow and distributes commands between the main controller and the 4 robots.
-*   **`leader_nav` (Main Controller):** The brain of the system. This is the core navigation file used to plan, control, and execute the movements and adaptive formation arrangements of all robots.
+## 🛠️ System Architecture
+
+The architecture is divided into two main layers: **High-Level Control (Python)** and **Low-Level Execution (ESP32/C++)**.
+
+### 1. High-Level Python Controller (`/Python`)
+The central brain (`leader_nav.py`) runs on a PC and processes real-time camera feeds. 
+* **Perception:** Uses `pupil_apriltags` to track robot positions and headings in real-time.
+* **Tracking:** Implements a Constant Velocity **Kalman Filter** to predict robot movements during occlusions and filter camera noise.
+* **Navigation:** Employs **Adaptive Pure Pursuit** with cross-track and curvature lookahead adjustments.
+* **Swarm Intelligence:** Uses **Fuzzy Logic (skfuzzy)** to calculate Adaptive Cruise Control (ACC) speeds and maintain formation cohesion without hard braking.
+* **Obstacle Avoidance:** Implements Artificial Potential Fields (APF) to repel robots from walls and each other dynamically.
+
+### 2. ESP32 Gateway & Swarm Nodes (`/Arduino`)
+* **Gateway (`Typce_C_Gateway_RL.ino`):** Acts as a high-speed serial bridge between the Python controller and the swarm network. Optimized to 80MHz to prevent thermal throttling while managing continuous serial-to-ESP-NOW conversion.
+* **Swarm Robots (`Robot_ESP32_RL_x.ino`):** Each robot runs a localized execution loop. They receive target PWM commands via **ESP-NOW broadcast (zero-latency)**, map the commands to L298N motor drivers, and include a 500ms dead-man's switch failsafe.
+
+## 🚀 Quick Start
+
+### Dependencies
+Ensure you have Python 3.8+ installed. Install the required packages:
+```bash
+pip install -r requirements.txt
