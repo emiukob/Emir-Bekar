@@ -1,4 +1,5 @@
 # Adaptive Formation Control For Collaborative Swarm Robots 🤖🛰️
+<img width="450" height="200" alt="line 1" src="https://github.com/user-attachments/assets/b18a6806-85b2-4496-8701-9b37eef12816" />
 
 This repository contains the software architecture, control algorithms, and hardware integration codes for the **Adaptive Formation Control of Swarm Robots** project. The system utilizes centralized vision processing (AprilTags) combined with decentralized swarm behaviors powered by Fuzzy Logic and ESP-NOW communication.
 
