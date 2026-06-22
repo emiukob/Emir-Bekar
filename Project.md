@@ -84,7 +84,7 @@ To test algorithms before physical deployment, the Python backend includes a bui
 
 <p align="center">
   <!-- GÖREV 4: BURAYA SLAYT 40'TAKİ "PARKOUR DESIGN" (KIRMIZI DUVAR ÇİZİM) EKRAN GÖRÜNTÜSÜNÜ EKLE -->
-  <img src="BURAYA_DUVAR_CIZIM_FOTOSU_GELECEK" alt="Parkour Design" width="400">
+  <img src="images/States.png" alt="Parkour Design" width="400">
 </p>
 
 * **[Left Click]:** Paint a 40x40px obstacle block[cite: 10].
