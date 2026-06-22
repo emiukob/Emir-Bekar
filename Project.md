@@ -68,7 +68,7 @@ The system was rigorously tested across various obstacle courses, including S-cu
 
 <p align="center">
   <!-- GÖREV 3: BURAYA SLAYT 33'TEKİ "STATE DISTRIBUTION PER ROBOT" (PIE CHARTS) GRAFİĞİNİ EKLE -->
-  <img src="BURAYA_PASTA_GRAFIKLERI_GELECEK" alt="State Distribution" width="800">
+  <img src="images/States.png" alt="State Distribution" width="800">
 </p>
 
 **Key Telemetry Highlights:**
@@ -84,7 +84,7 @@ To test algorithms before physical deployment, the Python backend includes a bui
 
 <p align="center">
   <!-- GÖREV 4: BURAYA SLAYT 40'TAKİ "PARKOUR DESIGN" (KIRMIZI DUVAR ÇİZİM) EKRAN GÖRÜNTÜSÜNÜ EKLE -->
-  <img src="images/States.png" alt="Parkour Design" width="400">
+  <img src="images/Parkour_Design.png" alt="Parkour Design" width="400">
 </p>
 
 * **[Left Click]:** Paint a 40x40px obstacle block[cite: 10].
