@@ -9,7 +9,7 @@
 
 <p align="center">
   <!-- GÖREV 1: BURAYA SLAYT 3'TEKİ 4'LÜ ROBOT FOTOĞRAFINI (Leader, R1, R2, R3 YAZAN) EKLE -->
-  <img src="images/Robots.png" alt="Swarm Robots" width="600">
+  <img src="images/Robots.png" alt="Swarm Robots" width="250">
 </p>
 
 </div>
