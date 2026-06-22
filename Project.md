@@ -46,7 +46,13 @@ Instead of rigid PID controllers that cause stuttering, we implemented **Fuzzy L
 ### 1. Line Formation & Adaptive Cruise Control (ACC)
 When the swarm detects a narrow corridor, it collapses into a single-file Line formation (R3 → R1 → R2)[cite: 10]. To prevent the "accordion effect" (stop-and-go waves):
 * **Input Ratio:** Calculated as `gap / FORMATION_SPACING`[cite: 10]. The target slot gap is strictly `0.55 * Spacing` behind the robot ahead[cite: 4, 10].
-* **Fuzzy Evaluation:** The ratio passes through membership functions: **Danger (0-20%), Caution (10-80%), and Safe (70-100%)**[cite: 10].
+* **Fuzzy Evaluation:** The ratio passes through membership functions: **Danger (0-0.50), Caution (0.40-0.85), and Safe (0.75-1.0)**[cite: 10].
+<p align="center">
+  <!-- GÖREV 1: BURAYA SLAYT 3'TEKİ 4'LÜ ROBOT FOTOĞRAFINI (Leader, R1, R2, R3 YAZAN) EKLE -->
+  <img src="images/accfuzzy.png" alt="Swarm Robots" width="350">
+</p>
+
+  
 * **Speed Output:** The controller outputs a smooth scaling factor: **Stop, Slow, or Fast**[cite: 10].
 * **Failsafe:** An emergency brake is triggered if the ratio drops below `0.30` (~66px) to prevent physical ramming[cite: 4, 10].
 
@@ -84,7 +90,7 @@ To test algorithms before physical deployment, the Python backend includes a bui
 
 <p align="center">
   <!-- GÖREV 4: BURAYA SLAYT 40'TAKİ "PARKOUR DESIGN" (KIRMIZI DUVAR ÇİZİM) EKRAN GÖRÜNTÜSÜNÜ EKLE -->
-  <img src="images/Parkour_Design.png" alt="Parkour Design" width="400">
+  <img src="images/Parkour_Design.png" alt="Parkour Design" width="800">
 </p>
 
 * **[Left Click]:** Paint a 40x40px obstacle block[cite: 10].
@@ -93,9 +99,28 @@ To test algorithms before physical deployment, the Python backend includes a bui
 
 ---
 
-## 🚀 Quick Start & Installation
+---
 
-### Requirements
-Ensure you have Python 3.8+ installed. Install the core dependencies:
-```bash
-pip install opencv-python numpy scikit-fuzzy pupil-apriltags pyserial
+## 🎥 Live Demo & Full Course Run
+
+Watch the complete autonomous run where the swarm navigates with applied fuzzy, handles narrow corridors via Adaptive Formation, and completes perfect precision parking.
+
+<p align="center">
+  <a href="https://youtu.be/iFn0FmXGxuo">
+    <img src="https://img.shields.io/badge/YouTube-Watch%20Full%20Course%20Run-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Swarm Run" height="50">
+  </a>
+</p>
+
+<p align="center">
+  <em>Click the badge above to watch the full system demonstration on YouTube.</em>
+</p>
+
+---
+
+## 📖 Academic Citation
+
+This project has been published and presented at the *8th International Congress on Human-Computer Interaction, Optimization and Robotic Applications (ICHORA 2026)* in Ankara, Türkiye.
+
+> Emir Bekar, Berkay Vatansever, Serra Irmak Uysal, Omer Yigit, Suleyman Efe Ceylan, Yesim Oniz. **"Adaptive Formation Control for Collaborative Swarm Robots,"** IEEE Xplore, 2026.
+> 
+> [🔗 Read the full paper on IEEE Xplore](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11537161&isnumber=11536968)
